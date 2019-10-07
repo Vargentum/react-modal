@@ -5,7 +5,7 @@ JQ=$(shell which jq)
 
 BABEL=./node_modules/.bin/babel
 COVERALLS=./node_modules/coveralls/bin/coveralls.js
-REMOTE="git@github.com:reactjs/react-modal"
+REMOTE="git@github.com:Vargentum/react-modal"
 CURRENT_VERSION:=$(shell jq ".version" package.json)
 COVERAGE?=true
 
@@ -121,7 +121,7 @@ init-docs-repo:
 build-docs:
 	@echo "[Building documentation]"
 	@rm -rf _book
-	@gitbook build -g reactjs/react-modal
+	@gitbook build -g Vargentum/react-modal
 
 pre-publish-docs: clean-docs init-docs-repo deps-docs
 
@@ -136,7 +136,7 @@ _publish-docs:
 	touch .nojekyll
 	git add .
 	git commit -am 'update book'
-	git push git@github.com:reactjs/react-modal gh-pages --force
+	git push git@github.com:Vargentum/react-modal gh-pages --force
 
 # Run for a full publish
 
