@@ -6,10 +6,10 @@
   "module": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/reactjs/react-modal.git"
+    "url": "https://github.com/Vargentum/react-modal.git"
   },
-  "homepage": "https://github.com/reactjs/react-modal",
-  "bugs": "https://github.com/reactjs/react-modal/issues",
+  "homepage": "https://github.com/Vargentum/react-modal",
+  "bugs": "https://github.com/Vargentum/react-modal/issues",
   "directories": {
     "example": "examples"
   },
